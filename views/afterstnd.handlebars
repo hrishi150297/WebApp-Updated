@@ -1,0 +1,35 @@
+<section class="container-fluid main-content"> 
+    <div class="flex-center">
+        <div class="container">
+            <header class="bkgnd">
+                <span><img class="header" src="/cfilogo.jpg"></span>
+                <h4 style="margin-left: 25px;">REPORT CARD</h4><br>
+                <h6 style="margin-left: 2px;">CHILDREN FUTURE INDIA (CFI), MUMBAI</h6><br>
+            </header>
+            <table class="table table-dark" style="margin-left: -75px;">
+  			    <thead>
+                    <tr>
+                        <td>Student Name</td>
+                        <td>{{ user.name }}</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>{{ user.date }}</td>
+                    </tr>
+                    <tr>
+                        <td>Standard</td>
+                        <td>{{ user.standard }}</td>
+                    </tr>
+                    <tr>
+                        <td>Marks Scored</td>
+                        <td>{{ user.marks }}</td>
+                    </tr>
+                    <tr>
+                        <td>File Name</td>
+                        <td>{{ user.file }}</td>
+                    </tr>
+                </thead>
+            </table>               
+        </div>
+    </div>
+</section>

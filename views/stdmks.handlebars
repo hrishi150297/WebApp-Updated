@@ -1,0 +1,45 @@
+<section class="container-fluid main-content"> 
+    <div class="flex-center">
+        <div>
+            <p><h4>The following table displays the standard wise marks of all the students currently enrolled in the organisation:</h4></p>
+        </div><br><br>
+
+        <div class="container">
+            {{!-- .success
+            .error --}}
+            <form id='form1' action='/stdmks' method= 'post'>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>File Number</th>
+                            <th>Name</th>
+                            <th>Standard</th>
+                            <th>Marks Obtained</th>
+                        </tr>
+                    </tbody>
+                </table>
+    table
+      tbody
+        tr
+          th ID
+          th Product Name
+          th Price
+          th Category
+          th Action
+        if data.length
+         each item in data
+          tr
+            td #{item['_id']}
+            td #{item['product_name']}
+            td #{item['price']}
+            td #{item['category']}
+            td
+               a.editlink(href='javascript:void(0)', data-id='#{item["_id"]}') Edit
+               |   
+               a(href='/delete?id=#{item["_id"]}', onclick='return confirm("You are going to delete this record. Continue?")') Delete
+            </form><br>
+            <a class="btn1" href="/stdtscount">VIEW TOTAL NUMBER OF STUDENTS</a>
+            <a class="btn1" href="/phsmks">VIEW PHASE WISE MARKS</a>
+        </div>     
+    </div>
+</section>
